@@ -1,0 +1,75 @@
+{  
+   "@context":"http://schema.org",
+   "@type":"Dataset",
+   "name":"201186_201186_Samplefile_201809191949_2.SPA",
+   "potentialAction":{  
+      "@type":"Action",
+      "name":"refinery",
+      "actionStatus":"http://schema.org/CompletedActionStatus"
+   },
+   "sameAs":"\\\\usfile01\\itdatawhse\\crl_dataIngest\\crl-dev\\20180919202\\cral\\T1Test\\201186_Samplefile_201809191949_2.SPA",
+   "url":"adl://srddac02xeastus2xdlsxd.azuredatalakestore.net/raw/crl/cral/Spectropscopy-IRImaging/201186_Samplefile_201808170147_1.SPA",
+   "about":{  
+      "@type":"Thing",
+      "description":"N, N - dimethylacrylamide(DMA) is observed throughout both samples(Tables 1 and 2).  The cleaned sample, E18 - 0333 - 02 shows less DMA compared to pre washed sample, E18-0333 - 01.No useful trend was observed in DMA level from “outside” of the roll to the “inside” of the roll.",
+      "disambiguatingDescription":"3M Menonmonie supplied a sample from a piece of neoprene rubber hose.They would like to determine how much N, N Dimethylacrylamide(DMA) has penetrated through the rubber hose. The side that was exposed to DMA has the largest flat surface.  The side with the saw marks on it would be towards the inside.",
+      "identifier":"260233"
+   },
+   "creator":{  
+      "@type":"Person",
+      "identifier":"US263070"
+   },
+   "dateCreated":"2018-09-26T20:17:41.2976598+00:00",
+   "fileFormat":"SPA",
+   "keywords":"TechniqueCode: IR, TechniqueLongDescription: Infrared Spectroscopy (IR)",
+   "sourceOrganization":{  
+      "@type":"Organization",
+      "name":"(US, St Paul) Corporate Research Analytical Laboratory(CRAL)",
+      "alternateName":"CRAL"
+   },
+   "workTranslation":{  
+      "@type":"CreativeWork",
+      "url":"adl://srddac02xeastus2xdlsxd.azuredatalakestore.net/refinery/crl/cral/automated/Spectropscopy-IRImaging/201186_Samplefile_201808170147_1.csv",
+      "dateCreated":"2018-09-26T15:17:39.5828728-05:00",
+      "dateModified":"2018-09-26T15:17:39.7636674-05:00"
+   },
+   "distribution":[  
+      {  
+         "@type":"DataDownload",
+         "url":"https://usw-su1.azuredatacatalog.com",
+         "contentUrl":"adl://srddac02xeastus2xdlsxd.azuredatalakestore.net/raw/crl/cral/Spectropscopy-IRImaging/201186_Samplefile_201808170147_1.SPA",
+         "encodingFormat":"CSV"
+      },
+      {  
+         "@type":"DataDownload",
+         "url":"https://usw-su1.azuredatacatalog.com",
+         "contentUrl":"adl://srddac02xeastus2xdlsxd.azuredatalakestore.net/raw/crl/cral/Spectropscopy-IRImaging/201186_Samplefile_201808170147_1.SPA",
+         "encodingFormat":"SPA"
+      }
+   ],
+   "includedInDataCatalog":{  
+      "@type":"DataCatalog",
+      "url":"https://usw-su1.azuredatacatalog.com"
+   },
+   "measurementTechnique":"IR Spectoscopy",
+   "hasDigitalDocumentPermission": [
+    {
+      "@type": "DigitalDocumentPermissionType",
+      "permissionType": "http://schema.org/WritePermission",
+      "grantee": {
+        "@type": "Audience",
+        "name": "cral - data - platform - dev - team - awesome",
+        "identifier" : "5c341e13-dfb3-48fc-a776-3dd9b8763293"
+      }
+    },
+    {
+      "@type": "DigitalDocumentPermissionType",
+      "permissionType": "http://schema.org/ReadPermission",
+      "grantee": {
+        "@type": "Audience",
+        "name": "cral-readers",
+        "identifier" : "64932e12-bca9-224l-n237-212de2492124"
+      }
+    }
+  ]
+}
