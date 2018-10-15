@@ -1,0 +1,112 @@
+<?xml version="1.0"?>
+<!DOCTYPE datasets [
+<!ELEMENT datasets (dataset+)>
+<!ELEMENT dataset (name, dateCreated, sameAs, url, fileFormat, measurementTechnique, potentialAction?, keywords, about, creator, sourceOrganization, workTranslation*, distribution*, includedInDataCatalog, hasDigitalDocumentPermission+)>
+<!ELEMENT name (#PCDATA) >
+<!ELEMENT keywords (#PCDATA)>
+<!ELEMENT dateCreated (#PCDATA)>
+<!ELEMENT sameAs (#PCDATA)>
+<!ELEMENT url (#PCDATA)>
+<!ELEMENT potentialAction (name, actionStatus)>
+<!ELEMENT actionStatus (#PCDATA)>
+<!ELEMENT about (description, disambiguatingDescription, identifier)>
+<!ELEMENT description (#PCDATA)>
+<!ELEMENT disambiguatingDescription (#PCDATA)>
+<!ELEMENT identifier (#PCDATA)>
+<!ELEMENT creator (identifier)>
+<!ELEMENT sourceOrganization (name, alternateName)>
+<!ELEMENT alternateName (#PCDATA)>
+<!ELEMENT workTranslation (url, dateCreated, dateModified )>
+<!ELEMENT dateModified (#PCDATA)>
+<!ELEMENT distribution (url, contentUrl, encodingFormat)*>
+<!ELEMENT contentUrl (#PCDATA)>
+<!ELEMENT encodingFormat (#PCDATA)>
+<!ELEMENT fileFormat (#PCDATA) >
+<!ELEMENT includedInDataCatalog (url)>
+<!ELEMENT measurementTechnique (#PCDATA)>
+<!ELEMENT hasDigitalDocumentPermission (permissionType, grantee)+>
+<!ELEMENT permissionType (#PCDATA)>
+<!ELEMENT grantee (name, identifier)>
+
+
+<!ATTLIST dataset context CDATA #FIXED "http://schema.org">
+<!ATTLIST dataset type CDATA #FIXED "Dataset" >
+<!ATTLIST potentialAction type CDATA  #FIXED "Action">
+<!ATTLIST about type CDATA #FIXED "Thing">
+<!ATTLIST creator type (Organization|Person)  #REQUIRED>
+<!ATTLIST sourceOrganization type CDATA #FIXED "Organization">
+<!ATTLIST workTranslation type CDATA #FIXED "CreativeWork">
+<!ATTLIST distribution type CDATA #FIXED "DataDownload">
+<!ATTLIST includedInDataCatalog type CDATA #FIXED "DataCatalog">
+<!ATTLIST permissionType type CDATA #FIXED "DigitalDocumentPermissionType">
+<!ATTLIST grantee type (Audience|Person)  #REQUIRED>
+
+<!ENTITY SchemaDefinition "http://schema.org/">
+<!ENTITY CompletedActionStatus "CompletedActionStatus">
+<!ENTITY ActiveActionStatus "ActiveActionStatus">
+<!ENTITY FailedActionStatus "FailedActionStatus">
+<!ENTITY ReadPermission "ReadPermission">
+<!ENTITY WritePermission "WritePermission">
+<!ENTITY DataCatalogSolution "https://usw-su1.azuredatacatalog.com">
+<!ENTITY AzureDataLakeStore "adl://srddac02xeastus2xdlsxd.azuredatalakestore.net/raw/crl">
+
+]>
+<datasets>
+    <dataset context="http://schema.org" type="Dataset">
+        <name>201186_201186_Samplefile_201809191949_2.SPA</name>
+        <dateCreated>2018-09-26T20:17:41.2976598+00:00</dateCreated>
+        <sameAs>\\\\usfile01\\itdatawhse\\crl_dataIngest\\crl-dev\\20180919202\\cral\\T1Test\\201186_Samplefile_201809191949_2.SPA</sameAs>
+        <url>&AzureDataLakeStore;/cral/Spectropscopy-IRImaging/201186_Samplefile_201808170147_1.SPA</url>
+        <fileFormat>SPA</fileFormat>
+        <measurementTechnique>IR Spectoscopy</measurementTechnique>
+        <potentialAction type="Action">
+            <name>refinery</name>
+            <actionStatus>&SchemaDefinition;&CompletedActionStatus;</actionStatus>
+        </potentialAction>
+        <keywords>TechniqueCode: IR, TechniqueLongDescription: Infrared Spectroscopy (IR)</keywords>
+        <about type="Thing">
+            <description>N, N - dimethylacrylamide(DMA) is observed throughout both samples(Tables 1 and 2).  The cleaned sample, E18 - 0333 - 02 shows less DMA compared to pre washed sample, E18-0333 - 01.No useful trend was observed in DMA level from “outside” of the roll to the “inside” of the roll.</description>
+            <disambiguatingDescription>3M Menonmonie supplied a sample from a piece of neoprene rubber hose.They would like to determine how much N, N Dimethylacrylamide(DMA) has penetrated through the rubber hose. The side that was exposed to DMA has the largest flat surface.  The side with the saw marks on it would be towards the inside.</disambiguatingDescription>
+            <identifier>260233</identifier>
+        </about>
+        <creator type="Person">
+            <identifier>US263070</identifier>
+        </creator>
+        <sourceOrganization type="Organization">
+            <name>(US, St Paul) Corporate Research Analytical Laboratory(CRAL)</name>
+            <alternateName>CRAL</alternateName>
+        </sourceOrganization>
+        <workTranslation type="CreativeWork">
+            <url>&AzureDataLakeStore;/cral/automated/Spectropscopy-IRImaging/201186_Samplefile_201808170147_1.csv</url>
+            <dateCreated>"2018-09-26T15:17:39.5828728-05:00"</dateCreated>
+            <dateModified>"2018-09-26T15:17:39.7636674-05:00"</dateModified>
+        </workTranslation>
+        <distribution type="DataDownload">
+            <url>&DataCatalogSolution;</url>
+            <contentUrl>&AzureDataLakeStore;/cral/automated/Spectropscopy-IRImaging/201186_Samplefile_201808170147_1.csv</contentUrl>
+            <encodingFormat>CSV</encodingFormat>
+        </distribution>
+        <distribution type="DataDownload">
+            <url>&DataCatalogSolution;</url>
+            <contentUrl>&AzureDataLakeStore;/cral/Spectropscopy-IRImaging/201186_Samplefile_201808170147_1.SPA</contentUrl>
+            <encodingFormat>SPA</encodingFormat>
+        </distribution>
+        <includedInDataCatalog type="DataCatalog">
+            <url>&DataCatalogSolution;</url>
+        </includedInDataCatalog>
+        <hasDigitalDocumentPermission>
+            <permissionType type="DigitalDocumentPermissionType">&SchemaDefinition;&ReadPermission;</permissionType>
+                <grantee type="Audience">
+                    <name>cral - data - platform - dev - team - awesome</name>
+                    <identifier>5c341e13-dfb3-48fc-a776-3dd9b8763293</identifier>
+                </grantee>
+        </hasDigitalDocumentPermission>
+        <hasDigitalDocumentPermission>
+            <permissionType type="DigitalDocumentPermissionType">&SchemaDefinition;&WritePermission;</permissionType>
+                <grantee type="Audience">
+                    <name>cral-readers</name>
+                    <identifier>64932e12-bca9-224l-n237-212de2492124</identifier>
+                </grantee>
+        </hasDigitalDocumentPermission>
+    </dataset>
+</datasets>
